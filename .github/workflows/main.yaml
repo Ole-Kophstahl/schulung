@@ -1,1 +1,11 @@
+name: Basic-Schulung
+on:
+  push:
+  workflow_dispatch:
 
+jobs:
+  build:
+    name: my Firste Action
+    runs-on:ubunto-latest
+    steps:
+        -uses: actions/checkout
