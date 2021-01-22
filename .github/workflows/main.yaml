@@ -5,12 +5,10 @@ on:
 
 jobs:
   build:
-    name: my Firste Action
-    runs-on: ubunto-latest
+    name: My first Action
+    runs-on: ubuntu-latest
     steps:
-        -uses: actions/checkout@V1
-        -ueses: ./action-a
+      - uses: actions/checkout@v1
+      - uses: ./action-a
         with:
-          MY_NAME: ${{secrets.SECRET_NAME}}
-        
-        
+          MY_NAME: ${{ secrets.SECRET_NAME }}
