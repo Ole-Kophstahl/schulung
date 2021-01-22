@@ -8,6 +8,9 @@ jobs:
     name: my Firste Action
     runs-on:ubunto-latest
     steps:
-        -uses: actions/checkout
+        -uses: actions/checkout@V1
+        -ueses:./action-a
+        with:
+          MY_NAME:${{secrets.SECRET_NAME}}
         
         
